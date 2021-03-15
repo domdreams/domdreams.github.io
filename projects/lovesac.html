@@ -115,60 +115,34 @@
                 <p style="max-width:767px; margin-bottom: 80px;">Lovesac Sactional couches are sectionals that can be adapted to fit your space. We wanted to use augmented reality as a way to help customers visualize various configurations in their homes. Below are our two initial concepts.</p>
             </div>
             <div class="col-2 left" style="padding-bottom: 0px !important;">
-            <div class="center-mob" >
-                <img src="lovesac/placer.jpg" width="100%" height="auto" style="max-width: 400px; margin: 20px 0px;"/>
-                <p class="caption">Concept 1</p>
-                <p class="p-small">Tap to place couch</p>
-            </div>
-            <div class="center-mob" >
-                <img src="lovesac/builder.jpg" width="100%" height="auto" style="max-width: 400px; margin: 20px 0px;"/>
-                <p class="caption">Concept 2</p>
-                <p class="p-small">A step-by-step custom builder</p>
+                <div class="center-mob" >
+                    <img src="lovesac/placer.jpg"  alt="Place concept prototype" width="100%" height="auto" style="max-width: 400px; margin: 20px 0px;"/>
+                    <p class="caption">Concept 1</p>
+                    <p class="p-small">Tap to place couch</p>
+                </div>
+                <div class="center-mob" >
+                    <img src="lovesac/builder.jpg"  alt="Builder concept prototype" width="100%" height="auto" style="max-width: 400px; margin: 20px 0px;"/>
+                    <p class="caption">Concept 2</p>
+                    <p class="p-small">A step-by-step custom builder</p>
+                </div>
             </div>
         </div>
-        </div>
-
-        <div class="col-1">
-            <h2>User Flow</h2>
-            <div class="col-3" style="padding-bottom: 0px !important;">
-
-                <div class="flow">
-                    <img src="atlanta/puzzle_white_64x64.png" width="100%" height="auto" style="max-width: 64px; margin: 20px 0px 10px 0px; opacity: 0.4;"/>
-                    <div><p class="num" style="display: inline;">01</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hr/></div>
-                    <p>Show a simple puzzle</p>
-                </div>
-
-                <div class="flow">
-                    <img src="atlanta/trophy_white_64x64.png" width="100%" height="auto" style="max-width: 64px; margin: 20px 0px 10px 0px; opacity: 0.4;"/>
-                    <div><p class="num" style="display: inline;">02</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hr/></div>
-                    
-                    <p>On puzzle completion<br>play teaser</p>
-                </div>
-              
-                <div class="flow">
-                    <img src="atlanta/trailer_white_64x64.png" width="100%" height="auto" style="max-width: 64px; margin: 20px 0px 10px 0px; opacity: 0.4;"/>
-                    <p class="num">03a</p>
-                    <p>Click out to full trailer</p>
-
-                    <img src="atlanta/cine_white_64x64.png" width="100%" height="auto" style="max-width: 64px; margin: 60px 0px 10px 0px; opacity: 0.4;"/>
-                    <p class="num">03b</p>
-                    <p>Show cinemagraph<br>endcard with playtimes<br>and show details</p>
-                </div>
-
-                <div>
-                   
-                </div>
-              
-
+        <div class="col-2">
+            <div class="vert-center left">
+                <video width="100%" height="auto" autoplay muted loop style="max-width: 350px;">
+                    <source src="lovesac/lovesac_final.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="vert-center center-mob">
+                <h2>Research &amp; Development</h2>
+                <p class="solution">R&D was required to learn how we could execute our first AR experience. After testing various platforms we found building a test experience was easiest using 8th Wall’s SDK. They have a unique and reliable SLAM engine that works well on mobile browsers.</p>
             </div>
         </div>
 
         <div class="col-2">
             <div class="vert-center center-mob">
-                <h2>Final Solution</h2>
-                <p class="solution">Season two’s surreal winter setting lent itself to the “scratcher” concept. Once 60 percent of a foggy windshield overlay was wiped away, it faded out and the teaser would play.
-                    <br><br>
-                    IAB guidelines require autoplay videos to start on mute but because this video plays on a user interaction we could play the teaser with sound as the default while still keeping the option to mute.</p>
+                <p class="solution">We tested triggering animations on touch using javascript events and 3D models saved using the glTF file format which allows animation data to be stored using JSON (a web friendly format for animation data).</p>
             </div>
             <div class="vert-center right">
                 <video width="100%" height="auto" autoplay muted loop style="max-width: 350px;">
@@ -177,31 +151,35 @@
                 </video>
             </div>
         </div>
-       
+
         <div class="col-1 center">
-            <h2>Qualitative Test Results</h2>
-            <p style="padding-bottom:80px; display:block; max-width:860px; margin:auto;">Rich media ads have granular data on how they are being interacted with by end users. We wanted to combine these insights with some qualitative results from internal usability tests to see how we can better design advertisement user experiences.</p>
-            <div class="col-2" style="padding-bottom: 0px !important;">
-                <div><img src="atlanta/ux_graph-1.png" width="100%" height="auto" style="max-width: 200px; margin: 20px 0px;"/>
-                    <p class="p-small">User’s browsers blocked the video<br>from playing on reveal.</p>
-                </div>
-                <div><img src="atlanta/ux_graph-2.png" width="100%" height="auto" style="max-width: 202px; margin: 20px 0px;"/>
-                    <p class="p-small">User’s watched the full<br>teaser before closing the ad.</p>
-                </div>
+            <div><img src="lovesac/arrangements.png"  alt="6 seats + 6 sides, 6 seats + 6 sides, 6 seats + 5 sides, and 6 seats + 8 sides." width="100%" height="auto" style="max-width: 1366px; "/></div>
+            <div style="width:100%;">
+                <p style="text-align: center; max-width: 980px; margin: 60px auto 250px auto;">Lovesac provided us with the 4 most popular configurations ordered online. Using our research findings we baked transition animations into the 3d couch model allowing the user to toggle through configurations.</p>
             </div>
         </div>
+        <div class="col-1 center">
+            <div><img src="lovesac/couch.png"  alt="6 seats + 6 sides, 6 seats + 6 sides, 6 seats + 5 sides, and 6 seats + 8 sides." width="100%" height="auto" style="max-width: 1366px; margin-top: 80px; "/></div>
+            <div style="width:100%; padding-top: 80px;">
+                <h2>Interface Best Practices</h2>
+                <p style="text-align: center; max-width: 980px; margin: 0px auto 250px auto;">In augmented reality, complex backgrounds are unavoidable. We conducted several visual tests to define best practices for UI elements. Our findings were that vignettes can be used to ensure contrast on key branding elements and a central safe zone should be kept clear so users can interact with their environments.</p>
+            </div>
+        </div>
+
+
         <div class="col-2">
-            
-            <div class="vert-center">
-                <img src="atlanta/adcon.png" width="100%" height="auto" style="max-width: 480px;"/>
+            <div class="vert-center center-mob">
+                <h2>Final Solution</h2>
+                <p class="solution">Users could place a virtual sactional in their home, use tap and drag to position the couch in the optimal location or toggle between configurations smoothly. Relevant product information would update in the UI as users switched between configurations.</p>
             </div>
-            <div class="center-mob" style="padding-top:40px;" >
-                  <h2>Adcon Font</h2>
-                <p>Our testing confirmed that gamification can make a video experience more engaging but more importantly it showed us the obvious; close buttons and play buttons are going to be the most used touch points in an advertisement. This is often overlooked because these aren’t usually considered drivers of “performance” when measured by click through rates.
-                    <br><br>
-                    We felt designing an icon font of basic ad UI elements would give us an easy starting point to iterate off when designing. Phase two of this project will be to make the font open source allowing for contributors across the ad tech industry and to define universal guidelines for using these essential UI elements.</p>
+            <div class="vert-center right">
+                <video width="100%" height="auto" autoplay muted loop style="max-width: 350px;">
+                    <source src="lovesac/lovesac_final.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
             </div>
         </div>
+     
    
     </div>
 
