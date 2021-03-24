@@ -86,67 +86,95 @@
             </svg>
             </a></div>
     </div>
-    <div class="hero audible_hero">
-       <div class="vert-bottom right" ><img src="audible/audible_hero.png" alt="Everything is Better When You Listen" width="100%" height="auto" style="max-width: 736px; margin-right:20px;"/></div>
+    <div class="hero lft_hero">
+       <div class="vert-bottom right" ><img src="lyft/lyft_hero.png" alt="" width="100%" height="auto" style="max-width: 736px; margin-right:20px; margin-bottom: -3px !important;"/></div>
        <div class="vert-center info">
-           <h2>Audible</h2>
+           <h2>Lyft</h2>
            <p class="caption">Challenge</p>
-           <p>Find an engaging way to showcase a wide variety of audiobooks and drive new subscriptions.</p>
+           <p>Create a consistent brand experience across Lyft email campaigns.</p>
            <br/>
            <p class="caption">Solution</p>
-           <p>A simple interactive ad that showcases their top selling titles.</p>
+           <p>Expanding their design system to include email development guidelines and templates.</p>
        </div>
     </div>
     <div class="content top">
         <div class="col-2">
-            <div class="center-mob" >
-                <h1 id="strike">Don’t judge a book by its cover</h1>
-                <p>We all fall victim to the above fallacy more often than we like to admit. If bookstore owners didn’t know this, they wouldn’t be lining their front shelves and towering glass windows with a collage of book covers specifically designed to bait curious passer-byers.
-                <br/><br/>
-                We borrowed visual cues from the visual experience of viewing book covers on store shelves and applied them to an interactive experience for Audible.</p>
+            <div class="center-mob vert-center" >
+                <h1>Coding for<br/>email is hard</h1>
+                <p>Writing pixel perfect email code  is nearly impossible. Hundreds of email service providers, browsers, operating systems, and devices make rendering email consistently difficult.
+                    <br><br>
+                    Adding email templates, modular code,  and testing best practices to the Lyft design system allowed us to maintain their brand standards at scale.
+                   </p>
             </div>
             <div class="vert-center right">
-                <img src="audible/dune.jpg" width="100%" height="auto" style="max-width: 400px;"/>
+                <img src="lyft/lyft_code.png" width="100%" height="auto" style="max-width: 500px;"/>
             </div>
         </div>
-        <div class="col-2-rev">
-            
-            <div class="vert-center">
-                <img src="audible/concepts-combined.png" width="100%" height="auto" style="max-width: 550px;"/>
+        <div class="col-2">
+            <div class="vert-center left center-mob" >
+                <img src="lyft/lyft_flip.gif" width="100%" height="auto" style="max-width: 500px;"/>
             </div>
-            <div class="center-mob" style="padding-top:40px;" >
-                  <h4 class="caption">Top left</h4>
-                <p class="p-small">Our first concept was a simple carousel of top selling book covers, housed in a 300 pixel by 250 pixel banner. The design also featured an additional “shelf” of titles bordering the bottom.</p>
-                <br/><br/>
-                <h4 class="caption">Bottom left</h4>
-                <p class="p-small">Concept two was also 300x250 pixels but included a 10 by 10 grid of book covers that could be panned through in four directions using click/drag or touch.</p>
-                <br/><br/>
-                <h4 class="caption">Right</h4>
-                <p class="p-small">Full screen and responsive, the third concept was designed for mobile devices and  included the ability to swipe through different covers and relevant text. </p>
+            <div class="vert-center center-mob" >
+               
+                <p class="solution">We took the building blocks of the Lyft brand and built reusable components for their marketing emails. Having a repository of components allowed us to quickly iterate on designs and reduced time testing code.</p>
             </div>
         </div>
     </div>
 
-<div class="col-full col-3bg" style="background-color: #EF941F;">
-    <div class="bg-3"><img class="screen" src="audible/1@2x.jpg" width="80%" style="max-width: 350px;"/></div>
-    <div class="bg-3"><img class="screen" src="audible/2@2x.jpg" width="80%" style="max-width: 350px;"/></div>
-    <div class="bg-3"><img class="screen" src="audible/3@2x.jpg" width="80%" style="max-width: 350px;"/></div>
-</div>
+    <div class="col-full" style="background: url('lyft/lyft_town.jpg');">
+        <div class="vert-bottom center"><img class="screen" src="lyft/lft_emails.png" width="80%" style="max-width: 850px; margin: 50px auto -3px auto !important;"/></div>
+    </div>
 
     <div class="content">
-        <div class="col-2">
-            <div class="vert-center center-mob">
-                <h2>Final Solution</h2>
-                <p class="solution">We went with concept 1 because of the flexibility of it’s 300x250 format and how it showcased top titles while still conveying variety. The design also allowed for easy implementation of personalized messaging and motion.</p>
+        
+
+        <div class="col-1">
+            <div class="center-mob" >
+                <h2>The Basics</h2>
+                <p style="max-width:767px; margin-bottom: 80px;">Basic email HTML has the infrastructure to make updating color and copy easy. However, we had to design and test new fallbacks for typography, spacing, and buttons. Below are a few components we designed and developed.</p>
             </div>
-            <div class="vert-center right">
-                <video width="100%" height="auto" autoplay muted loop style="max-width: 500px;">
-                    <source src="audible/300x250.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
+            <div class="col-2 left" style="padding-bottom: 0px !important;">
+                <div class="center-mob" >
+                    <img src="lyft/lyft_type.png"  alt="Place concept prototype" width="100%" height="auto" style="max-width: 400px; margin: 20px 0px;"/>
+                    <p class="caption">Type</p>
+                    <p class="p-small">A boilerplate with a style tag that imports the Lyft Pro san serif</p>
+                </div>
+                <div class="center-mob" >
+                    <img src="lyft/lyft_layout.png"  alt="Builder concept prototype" width="100%" height="auto" style="max-width: 400px; margin: 20px 0px;"/>
+                    <p class="caption">Spacing &amp; Layout</p>
+                    <p class="p-small">Hard coded spacers for consistent layouts</p>
+                </div>
             </div>
         </div>
+        <div class="col-2" style="padding-bottom: 80px !important;">
+            <div class="vert-center left center-mob" >
+                <img src="lyft/lyft_cta.png" width="100%" height="auto" style="max-width: 500px;"/>
+            </div>
+            <div class="vert-center center-mob" >
+                <h2>Bulletproof Buttons</h2>
+                <p class="solution">The easiest way to implement buttons in email is to use images, but we wanted to make sure our emails were as close to being ADA compliant as possible.  <a href="https://buttons.cm/" style=" font-family: 'Raleway', sans-serif; font-size: 1.33rem; font-weight: 500; color:#82C0E8;">Bulletproof buttons</a> provided us with the code to ensure our buttons can be read by screen readers but we added in image buttons as fallbacks for more consistent renderings in Outlook.</p>
+            </div>
+        </div>
+        <div class="col-1">
+            <script src="https://gist.github.com/domdreams/858d5f926720ed9a9e03d1e6fc9d6d58.js"></script>
+        </div>
+
+        <div class="col-2" style="padding-bottom: 80px !important;">
+            <div class="vert-center center-mob" >
+                <h2>2x Images</h2>
+                <p class="solution">We wanted to ensure all of our imagery looked sharp on high density pixel displays, so we used the following hack to force 2x images to work across all email clients.</p>
+            </div>
+            <div class="vert-center right center-mob" >
+                <img src="lyft/lyft_2x.jpg" width="100%" height="auto" style="max-width: 500px;"/>
+            </div>
+        </div>
+        <div class="col-1">
+            <script src="https://gist.github.com/domdreams/c655d9f635b8355573129c0bcd838cd2.js"></script>
+        </div>
     </div>
+
+    
+
 
     <div class="footer">
         <p class="p-small">&copy; Dominic Gerace 2021</p>

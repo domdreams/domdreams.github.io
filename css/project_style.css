@@ -1,3 +1,5 @@
+@import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/one-dark.css');
+
 .hero{
     padding: 20px 80px 0px 80px;
     display: grid;
@@ -30,13 +32,27 @@
 
 .lovesac_hero{
     background: url('../projects/lovesac/bg.jpg');
-    background-position: center 70%;
+    background-position: 50% 10%;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 
 .atl_hero h2, .atl_hero p{
+    color: #121212 !important;
+    
+}
+
+.lft_hero{
+    background: url('../projects/lyft/lyft_bg.jpg');
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #FFD6E5 !important;
+}
+
+
+.lft_hero h2, .lft_hero p{
     color: #121212 !important;
     
 }
