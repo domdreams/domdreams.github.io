@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,500&family=Raleway:ital,wght@0,300;0,500;0,600;1,500&display=swap');
+
 
 *{
     color:#D6D6D6;
@@ -30,8 +31,8 @@ a{
 }
 .home_hero{
   padding: 20vh 10% 0px 10%;
-  height: 80vh;
-  max-width: 600px;
+  height: 75vh;
+  
 }
 
 .home_vid{
@@ -43,11 +44,29 @@ a{
   z-index: -10;
 
 }
+#hello{
+  font-size: 8rem;
+  text-transform: none;
+  font-weight: 600;
+  letter-spacing: initial;
+}
+
+.prob-joy{
+  font-family: 'Bitter', sans-serif;
+  font-size: inherit;
+  text-transform: none;
+  font-weight: 500;
+  letter-spacing: initial;
+  font-style: italic;
+}
+
+
+#description{
+  font-size: 2.4rem;
+}
 
 .scroll{
-  position: absolute;
-  bottom: 15vh;
-  right: 10%;
+ margin-top:10vh;
 }
 
 
@@ -154,7 +173,7 @@ p{
       margin-bottom: 10px;
       width: 95%;
     height: auto;
-    max-width: 350px;
+    max-width: 400px;
   
      
   }
